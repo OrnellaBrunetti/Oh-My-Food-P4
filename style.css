@@ -1,0 +1,401 @@
+/* COLORS */
+
+:root {
+    --main-color: #F2F2F2;
+    /* var(--main-color) */
+    --second-color: #0065FC;
+    /* var(--second-color) */
+    --hover-btn-color: #DEEBFF;
+    /* var(--hover-btn-color) */
+    --border-color: #D9D9D9;
+    /* var(--border-color) */
+    --white-color: #FFFFFF;
+    /* var(--white-color) */
+    --black-color: #000000;
+    /* var(--black-color) */
+}
+
+body,
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.main_title {
+    font-family: shrikhand;
+    text-align: center;
+    font-weight: 400;
+    font-size: 30px;
+    margin: 2%;
+
+}
+
+/** Search bar **/
+
+.form_search_container {
+    background-color: #eaeaea;
+    padding: 13px;
+    text-align: center;
+}
+
+.search_bar {
+    padding: 0 15px 0 35px;
+}
+
+.input_search_bar {
+    background-color: #eaeaea;
+    border: none;
+    font-family: roboto;
+    font-size: 1em;
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: black;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: black;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: black;
+}
+
+::-moz-placeholder {
+    opacity: 1;
+}
+
+.btn_search_bar {
+    display: none;
+}
+
+/** main section **/
+
+.container_book {
+    background-color: #f7f7f7;
+    padding: 40px 0 40px 0;
+}
+
+.title_book {
+    font-family: roboto;
+    font-size: 1.6em;
+    text-align: center;
+    padding-left: 12%;
+    padding-right: 12%;
+}
+
+.paragraph_book {
+    text-align: center;
+    padding: 5% 6%;
+    font-family: roboto;
+    font-weight: 300;
+    font-size: 1.2em;
+}
+
+.link_book {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    padding: 3%;
+    display: block;
+    background: linear-gradient(#9356DC, #FF79DA);
+    max-width: 218px;
+    width: 30%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    margin: auto;
+}
+
+/** functioning **/
+
+.container_functioning {
+    padding: 45px 7%;
+    display: flex;
+    flex-direction: column;
+}
+
+.functioning_title {
+    font-family: roboto;
+    margin-bottom: 3%;
+}
+
+.functioning_btn {
+    display: flex;
+    flex-direction: column;
+}
+
+.functioning_btn>li {
+    display: flex;
+    flex-direction: row;
+    background-color: #F6F6F6;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    height: 65px;
+    margin: 15px 0;
+    align-items: center;
+}
+
+.fa-mobile-screen-button,
+.fa-list,
+.fa-store {
+    color: #7E7E7E;
+    margin: 0 8% 0 5%;
+}
+
+.functioning_number {
+    background-color: #9356DC;
+    width: 21px;
+    height: 18px;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    position: relative;
+    right: 12px;
+    padding-top: 3px;
+    font-family: roboto;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.functioning_btn_h3 {
+    font-family: roboto;
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+/** card restaurants **/
+
+#restaurants {
+    background-color: #F7F7F7;
+    padding: 50px 4%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sub_container_restaurants > h2 {
+    margin-bottom: 5%;
+    font-family: roboto;
+}
+
+.container_cards_restaurants {
+    display: flex;
+    flex-direction: column;
+    max-width: 375px;
+    margin: auto;
+}
+
+.cards {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin-bottom: 6%;
+    width: 100%;
+}
+
+.container_img_text {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+
+.img_card_restaurants {
+    display: flex;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    max-width: 100%;
+    border-radius: 20px 20px 0 0;
+    
+}
+
+.new_card {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #99E2D0;
+    padding: 7px 12px;
+    color: #008766;
+    border-radius: 3px;
+    font-weight: 400;
+}
+
+.container_text_heart {
+    padding: 13px;
+    position: relative;
+}
+
+.container_text_heart > i {
+    position: absolute;
+    top: 23px;
+    right: 30px;
+    font-size: 22px;
+}
+
+.container_text_heart > h2 {
+    margin: 0 0 5px 0;
+    font-size: 1.3em;
+    Font-family: Roboto;
+}
+
+.container_text_heart > p {
+    margin: 0;
+    font-weight: 300;
+    font-size: 17px;
+    font-family: roboto;
+}
+
+/** footer **/
+
+footer {
+    background-color: #353535;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 5%;
+}
+
+footer h2 {
+    margin: 0 0 10px 0;
+    font-family: "Shrikhand", sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+  }
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+}  
+
+footer ul li {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+footer ul li a {
+    display: flex;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-family: roboto;
+  }
+footer ul li a i {
+    margin-right: 10px;
+  }
+
+  
+@media screen and (min-width:780px) {
+
+/** main section **/
+
+.container_book {
+    padding: 30px 0 30px 0;
+    }
+.paragraph_book {
+    padding: 3%;
+    font-size: 20px;
+    }
+.link_book {
+    padding: 20px;
+    font-size: 1.3em;
+}
+
+/** Functionning **/
+
+
+.container_functioning {
+    padding: 45px 5%;
+    }
+
+.functioning_btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    }
+
+.functioning_btn>li {
+    width: 30%;
+    }
+
+.functioning_btn_h3 {
+    font-size: 75%;
+    }
+
+.fa-mobile-screen-button,
+.fa-list,
+.fa-store {
+    margin: 0 6% 0 4%;
+    }
+}
+
+/** restaurants **/
+
+.container_cards_restaurants {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    flex-wrap: wrap;
+    flex-direction:row;
+    justify-content: space-around;
+}
+
+@media screen and (min-width:1024px) {
+
+#restaurants {
+    padding: 50px 10%;
+}
+
+.sub_container_restaurants {
+    width: 100%;
+}
+
+.sub_container_restaurants > h2 {
+    margin-bottom: 3%;
+}
+
+.container_cards_restaurants {
+    max-width: 100%;
+    justify-content: space-between;
+}
+.cards {
+    width: 44%;
+}   
+
+.functioning_btn_h3 {
+    font-size: 100%;
+}
+
+.fa-mobile-screen-button, .fa-list, .fa-store {
+    margin: 0 8% 0 6%;
+}
+
+footer {
+    flex-direction: row-reverse;
+}
+
+footer h2 {
+    margin-left: 2%;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.footer_space {
+    margin-right: 50px;
+}
+
+.footer_fat {
+    font-weight: 900;
+}
+
+}
