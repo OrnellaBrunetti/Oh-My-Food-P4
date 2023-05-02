@@ -290,6 +290,9 @@ footer ul li a i {
     margin-right: 10px;
   }
 
+.footer_fat {
+    font-weight: 900;
+}
   
 @media screen and (min-width:780px) {
 
@@ -392,10 +395,6 @@ footer ul {
 
 .footer_space {
     margin-right: 50px;
-}
-
-.footer_fat {
-    font-weight: 900;
 }
 
 }
