@@ -151,6 +151,13 @@ p {
     margin-top: 40px;
 }
 
+.btn:hover {
+    background: -o-linear-gradient(bottom, #a16be0 0%, #ff93e1 100%);
+    background: linear-gradient(to top, #a16be0 0%, #ff93e1 100%);
+    -webkit-box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.75);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.75);
+}
+
 /** footer **/
 
 footer {
