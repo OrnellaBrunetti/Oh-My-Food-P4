@@ -288,6 +288,26 @@ body,
     font-size: 22px;
 }
 
+/** hover heart color change **/
+
+.container_text_heart:active .fa-solid {
+    transform: scale(1);
+    opacity: 1;
+  }
+.container_text_heart:active .fa-regular {
+    opacity: 0;
+  }
+.container_text_heart .fa-solid {
+    background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(0);
+    opacity: 0;
+  }
+.container_text_heart .fa-regular {
+    opacity: 1;
+  }
+
 
 .container_text_heart > h2 {
     margin: 0 0 5px 0;
