@@ -48,11 +48,9 @@ body,
   }
 
 .loader {
-    /*left: 40%;
-    top: 50%;*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
+    left: calc(50% - 70px);
+    top:50%;
     z-index: 1;
     overflow: hidden;
     position: absolute;
