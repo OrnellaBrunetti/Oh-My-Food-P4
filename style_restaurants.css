@@ -127,13 +127,13 @@ hr {
     box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
     border-radius: 15.0431px;
     /*transform: translateY(5px);*/
-	animation: T-animation ease-in both; 
+	animation: T-animation ease-in 1s both; 
 }
 
  
 @keyframes T-animation {
     from {
-        transform: translateY(-100%);
+        transform: translateY(-50%);
         opacity: 0;
     }
 
@@ -145,7 +145,7 @@ hr {
 
 @-webkit-keyframes T-animation { /* sur Safari et Chrome */
     from {
-        transform: translateY(-100%);
+        transform: translateY(-50%);
         opacity: 0%;
     }
     to {
@@ -155,7 +155,7 @@ hr {
     }
 @-o-keyframes T-animation { /* sur Opera */
     from {
-        transform: translateY(-100%);
+        transform: translateY(-50%);
         opacity: 0%;
     }
     to {
@@ -166,13 +166,17 @@ hr {
 
 
 .animation1 {
-    animation-delay: 1s;}
+    animation-delay: 0.1s;}
 
 .animation2 {
-    animation-delay: 2s;}  
+    animation-delay: 1s;}  
         
 .animation3 {
-    animation-delay: 3s;}
+    animation-delay: 1.9s;}
+
+.animation4 {
+    animation-delay: 2.8s;
+}   
 
     
 span {
@@ -242,6 +246,8 @@ p {
 /*** btn commander ***/
 
 .btn {
+    font-family: roboto;
+    font-weight: 300;
     text-decoration: none;
     text-align: center;
     color: white;
@@ -375,6 +381,5 @@ section {
     right: 28%;
     font-size: 22px;
 }
-
 
 }
