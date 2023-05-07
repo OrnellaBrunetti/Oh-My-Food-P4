@@ -41,10 +41,10 @@ header a {
 
 /** main **/
 
-section {
+.general-container {
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
-    margin-top: -50px;
+    margin: -50px 0px 0px 0px;
     background-color: white;
     position: relative;
     padding: 30px 4% 40px 4%;
@@ -313,35 +313,45 @@ footer ul li a i {
 .footer_fat {
     font-weight: 900;
 }
+
+@media screen and (min-width:768px) {
+
+.general-container {
+    margin: -50px 5% 0 5%;
+}    
+
+footer {
+    flex-direction: row-reverse;
 }
 
+footer h2 {
+    margin-left: 1%;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.footer_space {
+    margin-right: 50px;
+}
+
+}
 
 @media screen and (min-width:1024px) {
-    
-    footer {
-        flex-direction: row-reverse;
-    }
-    
-    footer h2 {
-        margin-left: 2%;
-    }
-    
-    footer ul {
-        display: flex;
-        flex-direction: row;
-        gap: 15px;
-    }
-    
-    .footer_space {
-        margin-right: 50px;
-    }
-    
 
-
-section {
-    margin-left: 12%;
-    margin-right: 12%;   
+.general-container {   
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    background-color: white;
+    position: relative;
+    padding: 30px 4% 40px 4%;
+    background-color: #F6F6F6;
+    margin: -50px 12% 0 12%;
 }
+    
 
 .container-title-heart {
     justify-content: center;
@@ -354,6 +364,15 @@ section {
     top: 11px;
     right: 28%;
     font-size: 22px;
+}
+footer h2 {
+    margin-left: 2%;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
 }
 
 }

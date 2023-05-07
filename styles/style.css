@@ -264,6 +264,11 @@ body,
     margin: auto;
 }
 
+.sub_container_restaurants {
+    width: 97%;
+    max-width: 380px;
+}
+
 .sub_container_restaurants > h2 {
     margin-bottom: 5%;
     font-family: roboto;
@@ -406,6 +411,9 @@ footer ul li a i {
     font-weight: 900;
 }
   
+
+/****** TAB ******/
+
 @media screen and (min-width:780px) {
 
 /** main section **/
@@ -448,10 +456,14 @@ footer ul li a i {
 .fa-store {
     margin: 0 6% 0 4%;
     }
-}
+
 
 /** restaurants **/
 
+.restaurants {
+    margin: 0 5%;
+    border-radius: 25px 25px 0 0;
+}
 
 .container_cards_restaurants {
     display: flex;
@@ -462,10 +474,20 @@ footer ul li a i {
     justify-content: space-around;
 }
 
+}
+
+
+/****** DESKTOP ******/
+
 @media screen and (min-width:1024px) {
 
+.restaurants {
+    margin :auto;
+    border-radius: 0px;
+}    
 .sub_container_restaurants {
     width: 100%;
+    max-width: none;
 }
 
 .sub_container_restaurants > h2 {
@@ -487,6 +509,8 @@ footer ul li a i {
 .fa-mobile-screen-button, .fa-list, .fa-store {
     margin: 0 8% 0 6%;
 }
+
+/** footer **/
 
 footer {
     flex-direction: row-reverse;
