@@ -125,7 +125,6 @@ hr {
     padding-left: 3.5%;
     box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
     border-radius: 15.0431px;
-    /*transform: translateY(5px);*/
 	animation: T-animation ease-in 1s both; 
 }
 
@@ -211,35 +210,42 @@ p {
 
 .check {
     height: 100%;
-    position: absolute;
-    right: 0;
-    width: 0%;
-    background: #99E2D0;;
+    width: 59px;
+    margin: -1rem;
+    background-color: #99E2D0;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    top: 0;
+    left: 102.4%;
+    position: absolute;
     border-radius: 0px 15px 15px 0px;
-    opacity: 0;;
-    animation-name: slidein;
-
+    opacity:0;
 }
 
-.card-courses:hover > .check  {
-    opacity: 1;
-    -webkit-transition: width 1s ease-in-out;
-    -moz-transition: width 1s ease-in-out;
-    -ms-transition: width 1s ease-in-out;
-    -o-transition: width 1s ease-in-out;
-    transition: width 1s ease-in-out;
+
+.check > i {
+    height: 1.3rem;
+    width: 1.3rem;
+    background-color: white;
+    color: #99e2d0;
+    transform: rotate(180deg);
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
 }
 
-@keyframes slidein {
-    0% {width: 0%;}
-    20% {width: 20%;}
-    50% {width: 50%;}
-    100% {width: 100%;}  
+.check:hover {
+    transform-origin: 50% 50%;
+    transform:translateX(-104.5%);
+    transition: 1s ease-in-out both;
+    opacity:1;
+}
+
+.check:hover >i {
+    rotate: 180deg;
 }
 
 /*** btn commander ***/
