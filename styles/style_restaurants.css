@@ -210,8 +210,6 @@ p {
     position: relative;
     top: 20px;
     margin-right: 40%;
-    transform: translateX(0);
-    transition: 0.4s forwards;
     text-overflow: ellipsis;
     overflow: hidden;
 }
